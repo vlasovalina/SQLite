@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/imageViewPhoto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewId"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:hint="ID"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageViewPhoto"
+                android:layout_toEndOf="@+id/imageViewPhoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewName"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:hint="Name"
+                android:layout_below="@+id/textViewId"
+                android:layout_alignLeft="@+id/textViewId"
+                android:layout_alignStart="@+id/textViewId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewSurName"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_below="@+id/textViewName"
+                android:layout_alignLeft="@+id/textViewName"
+                android:layout_alignStart="@+id/textViewName"
+                android:paddingBottom="10dp"
+                android:hint="Surname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewAge"
+                android:layout_weight="1"
+                android:layout_below="@+id/textViewSurName"
+                android:layout_alignLeft="@+id/textViewSurName"
+                android:layout_alignStart="@+id/textViewSurName"
+                android:paddingBottom="10dp"
+                android:hint="Age" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
